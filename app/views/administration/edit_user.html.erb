@@ -1,0 +1,35 @@
+<h2>Administration::EditUser</h2>
+<% form_for :user, @user, :method => :post, :url => {:action => "update_user", :id => @user.id}  do |f| %>
+  <%= f.error_messages %>
+  <p>User ID: <%= @user.id %></p>
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %><br />
+  </p>
+  <p>
+    <%= f.label :company_name %><br />
+    <%= f.text_field :company_name %><br />
+  </p>
+  <p>
+  <p>
+    <%= f.label "Security Level" %><br />
+    <%= select(:user, :role, ['Admin', 'Manager', 'Customer', 'Developer'], {:selected => @user.role}) %>
+  </p> 
+  <%= f.submit "Update" %>
+  </p>
+<% end %>
+<div id="nav">
+  <%= link_to "Back", :action => "view_users" %>
+</div>

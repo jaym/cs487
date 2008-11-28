@@ -1,0 +1,34 @@
+<h2>Administration::ViewProjects</h2>
+
+<% unless flash[:notice].blank? %>
+  <div id="notification"><%= flash[:notice] %></div>
+<% end %>
+
+<% unless flash[:warning].blank? %>
+  <div id="warning"><%= flash[:warning] %></div>
+<% end %>
+
+<table cellpadding="15">
+
+  <tr>
+    <th>ProjectID</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Open Date</th>
+    <th>Close Date</th>
+  </tr>
+<% for project in @projects %>
+  <tr>
+    <td><%= project.id %></td>
+    <td><%= project.name %></td>
+    <td><%= project.description %></td>
+    <td><%= project.open_date %></td>
+    <td><%= project.close_date %></td>
+    <td><%= link_to 'Delete', :action => 'delete_project', :id => project %></td>
+  </tr>
+<% end %>
+</table>
+<div id="nav">
+  <%= link_to 'Back', :action => 'index' %>
+</div>
+

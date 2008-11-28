@@ -1,0 +1,14 @@
+<% unless flash[:warning].blank? %>
+  <div id="warning"><%= flash[:warning] %></div>
+<% end %>
+<% form_tag session_path do %>
+  <p>Please log in.</p>
+  <p>
+  <label>Username:</label>
+  <%= text_field_tag 'login' %>
+  </p>
+  <p>
+  <label>Password:</label>
+  <%= password_field_tag 'password' %>
+  <p><%= submit_tag 'login' %></p>
+<% end %>

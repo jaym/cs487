@@ -1,0 +1,33 @@
+<h2>Administration::ViewUsers</h1>
+<% unless flash[:notice].blank? %>
+  <div id="notification"><%= flash[:notice] %></div>
+<% end %>
+<table cellpadding="15">
+
+  <tr>
+    <th>UserID</th>
+    <th>Username</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>E-Mail</th>
+    <th>Company Name</th>
+    <th>Security Role</th>
+  </tr>
+<% for user in @users %>
+  <tr>
+    <td><%= user.id %></td>
+    <td><%= user.username %></td>
+    <td><%= user.first_name %></td>
+    <td><%= user.last_name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.company_name %></td>
+    <td><%= user.role %></td>
+    <td><%= link_to 'Edit', :action => 'edit_user', :id => user %></td>
+    <td><%= link_to 'Delete', :action => 'delete_user', :id => user %></td>
+  </tr>
+<% end %>
+</table>
+  <div id="nav">
+    <%= link_to 'Create User', :action => 'new_user' %>
+    <%= link_to 'Back', :action => 'index' %>
+  </div>
