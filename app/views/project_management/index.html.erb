@@ -1,2 +1,36 @@
-<h1>ProjectManagement#index</h1>
-<p>Find me in app/views/project_management/index.html.erb</p>
+<h2>ProjectManagement</h2>
+<% unless flash[:warning].blank? %>
+  <div id="warning"><%= flash[:warning] %></div>
+<% end %>
+
+  <h3>My Projects</h3>
+  <table cellspacing="3px">
+  <tr>
+    <th>ProjectID</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Open Date</th>
+    <th>Close Date</th>
+  </tr>
+  <% if @projects %>
+  <% for project in @projects %>
+    <% if project.close_date %>
+    <tr id="warning">
+    <% else %>
+    <tr id="notification">
+    <% end %>
+      <td><%= project.id %></td>
+      <td><%= project.name %></td>
+      <td><%= project.description %></td>
+      <td><%= project.open_date %></td>
+      <td><%= project.close_date %></td>
+      <td><%= link_to 'Manage', :action => 'manage', :id => project %></td>
+      <td><%= link_to 'Close', {:action => 'close_project', :id=> project }, {:method => :delete} %></td>
+      <td><%= link_to 'Delete', :action => 'destroy', :id => project %></td>
+    </tr>
+  <% end %>
+</table>
+<% end %>
+<div id="nav">
+  <%= link_to 'Create Project', :action => 'new_project' %>
+</div>

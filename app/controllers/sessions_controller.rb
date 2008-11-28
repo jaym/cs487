@@ -11,9 +11,9 @@ class SessionsController < ApplicationController
       if @current_user.role == "Admin"
         redirect_to :controller => "Administration" 
       elsif @current_user.role == "Manager"
-        redirect_to :controller => "ProjectManagement"
+        redirect_to :controller => "Project_Management"
       else
-        redirect_to :controller => "UserManagement"
+        
       end
     else
       flash[:warning] = "Incorrect login"
@@ -23,6 +23,8 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = @current_user = nil
+    flash[:notice] = "You have been logged out"
+    redirect_to :action=>'new'
   end
 
 end
