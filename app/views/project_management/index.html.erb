@@ -15,9 +15,9 @@
   <% if @projects %>
   <% for project in @projects %>
     <% if project.close_date %>
-    <tr id="warning">
+    <tr id="closed">
     <% else %>
-    <tr id="notification">
+    <tr id="open">
     <% end %>
       <td><%= project.id %></td>
       <td><%= project.name %></td>

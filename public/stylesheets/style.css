@@ -1,12 +1,23 @@
 body {
-  background-color: #666;
+  background-color: #E9EBFF;
   margin: 15px 25px;
   font-family: Helvetica, Arial, sans-serif
 }
+table {
+  background-color: #F0F0F0;
+  border: 1px solid #D8D8D8;
+  color:#484848;
+}
+td, th {
+  padding:0.5em 0.3em;
+  border: 1px solid #D8D8D8;
+}
 #content {
-  background-color: #fff;
-  border: 10px solid #ccc;
+ // background-color: #fff;
   padding: 10px 10px 20px 10px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #notification {
   border: 5px solid #9c9;
@@ -24,4 +35,63 @@ body {
   padding: 5px;
   margin: 10px 0;
 
+}
+#nav, #login_logout {
+  background-color: #F0F0F0;
+  border: 1px solid #D8D8D8;
+  padding: 5px;
+  margin: 10px 0;
+  text-align: center;
+}
+#login_logout {
+  width: auto;
+  float: right;
+  text-align: right;
+  font-size: 70%;
+}
+#nav {
+  
+}
+
+form {
+  background-color: #F0F0F0;
+  border: 1px solid #D8D8D8;
+  margin: 10px 0;
+  padding: 10px;
+  width: 45%;
+  
+}
+
+input, select {
+  padding: 1px 0;
+  border: 1px solid #D8D8D8;
+  font-size: 105%;
+}
+#user_submit{
+ padding: 0.1em 1em;
+}
+label {
+  font-size: 75%;
+}
+h1 {
+  font-size: 160%;
+  margin-bottom: 1em;
+}
+h2 {
+  font-size: 100%;
+  margin-bottom: .5em;
+}
+h3 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 80%;
+}
+#closed {
+  font-size: 75%;
+  font-style: italic;
+  font-weight: bold;
+  color: #f55;
+}
+#open {
+  font-size: 90%;
 }

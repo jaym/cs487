@@ -17939,3 +17939,2822 @@ Rendering template within layouts/application
 Rendering project_management/index
   [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
 Completed in 86ms (View: 68, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-11-27 22:59:07) [DELETE]
+  Parameters: {"authenticity_token"=>"b8b5760832ad7b2f79977b33272559f6415fa891"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Redirected to actionnew
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-11-27 22:59:07) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-11-27 22:59:13) [POST]
+  Parameters: {"commit"=>"login", "authenticity_token"=>"b8b5760832ad7b2f79977b33272559f6415fa891", "login"=>"Administrator", "password"=>"admin"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE (username = 'administrator') LIMIT 1[0m
+Redirected to controllerAdministration
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/session]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-27 22:59:13) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/administration]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 22:59:35) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-27 23:00:44) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 75ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_projects (for 127.0.0.1 at 2008-11-27 23:00:46) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) LIMIT 1[0m
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/application
+Rendering administration/view_projects
+Completed in 28ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/view_projects]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-27 23:01:02) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-11-27 23:17:50) [DELETE]
+  Parameters: {"authenticity_token"=>"b8b5760832ad7b2f79977b33272559f6415fa891"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 7) LIMIT 1[0m
+Redirected to actionnew
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-11-27 23:17:50) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-11-27 23:20:13) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-11-27 23:20:45) [POST]
+  Parameters: {"commit"=>"login", "authenticity_token"=>"b8b5760832ad7b2f79977b33272559f6415fa891", "login"=>"manger", "password"=>"temp4now"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE (username = 'manger') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 77ms (View: 4, DB: 1) | 200 OK [http://localhost/session]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-11-27 23:20:51) [POST]
+  Parameters: {"commit"=>"login", "authenticity_token"=>"b8b5760832ad7b2f79977b33272559f6415fa891", "login"=>"manager", "password"=>"temp4now"}
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE (username = 'manager') LIMIT 1[0m
+Redirected to controllerProject_Management
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/session]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:20:51) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:23:21) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:23:33) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 91ms (View: 19, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:24:34) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:25:49) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 16, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:26:05) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:26:06) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:26:13) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 84ms (View: 67, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:26:17) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:26:18) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:26:26) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 91ms (View: 73, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:26:37) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:26:58) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:27:17) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 94ms (View: 76, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:27:30) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:27:36) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:27:39) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 92ms (View: 19, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:27:45) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:28:44) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:28:45) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:28:52) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-27 23:29:02) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:29:05) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 74ms (View: 60, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:29:46) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:30:25) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:30:38) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:30:52) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:31:18) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 96ms (View: 77, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:31:42) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:31:50) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:32:23) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:32:32) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:32:41) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:33:01) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:33:09) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:33:21) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:33:30) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:33:38) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 73ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:34:18) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:34:30) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:34:50) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:34:58) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:35:08) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 74ms (View: 61, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:35:17) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:35:25) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:35:54) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:35:58) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:36:22) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 46ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:36:34) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:36:48) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:36:53) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:36:57) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:37:07) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-11-27 23:37:16) [GET]
+
+
+ActionController::RoutingError (No route matches "/p" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:37:19) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 39ms (View: 20, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:38:14) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:38:23) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 87ms (View: 70, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:40:39) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 38ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:40:40) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-27 23:40:44) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 92ms (View: 19, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-27 23:40:51) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:40:54) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:41:22) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:41:34) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:41:49) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:42:17) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:42:34) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:42:56) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:43:12) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:43:15) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:43:21) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:43:26) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 23ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:43:37) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:44:31) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:45:04) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 75ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:45:12) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:45:32) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:45:50) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:46:17) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:46:39) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 73ms (View: 17, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:46:47) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:46:50) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:46:57) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:53:07) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:53:22) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:53:23) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:54:23) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:54:38) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 24ms (View: 8, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:54:50) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 25ms (View: 8, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:54:54) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:55:04) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:55:24) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:56:04) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:56:10) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:56:20) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:56:24) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:56:26) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:56:33) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:57:02) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:57:35) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:58:00) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 76ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:58:34) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:58:47) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-27 23:58:57) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:03:01) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 85ms (View: 65, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:04:41) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:04:42) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:04:46) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 93ms (View: 74, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:04:54) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:05:00) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:05:06) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 92ms (View: 20, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:05:28) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:05:40) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:06:22) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 93ms (View: 19, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:06:36) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:06:42) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:06:55) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 19, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:07:01) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:07:13) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 87ms (View: 68, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:07:29) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:07:44) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:08:14) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 91ms (View: 74, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:08:19) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:08:25) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:08:29) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 93ms (View: 19, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:09:20) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:09:21) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:09:32) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:09:34) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:09:37) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:09:54) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:09:55) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:10:12) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 88ms (View: 70, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:10:13) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:10:16) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:10:20) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 92ms (View: 74, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:11:06) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:11:14) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:11:20) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 94ms (View: 19, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:11:51) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:12:06) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:12:23) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 19, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:12:33) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:12:44) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 88ms (View: 69, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:12:53) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:13:04) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:13:18) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 92ms (View: 73, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:14:26) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:14:28) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:14:31) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 96ms (View: 21, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:14:33) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (1.0ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:14:44) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:15:19) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 39ms (View: 20, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:15:28) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:15:45) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:15:53) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:17:48) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:18:10) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:18:17) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:18:20) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:18:35) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:18:38) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:18:58) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:19:11) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:19:19) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 74ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:20:55) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:21:11) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:21:37) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:22:22) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 8, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:23:21) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:24:42) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:24:55) [GET]
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 2) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:25:01) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:25:08) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:25:43) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:26:09) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:26:22) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:26:27) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:26:31) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:26:40) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:26:47) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:27:03) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:27:10) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:27:23) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:27:26) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:27:33) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 38ms (View: 24, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:28:09) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:28:11) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:28:31) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:28:40) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:29:06) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 38ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:29:37) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:29:54) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 81ms (View: 63, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:33:12) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:33:14) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:33:19) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:33:27) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:34:33) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 75ms (View: 63, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:34:34) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:34:54) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:35:05) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:35:15) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:35:25) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 75ms (View: 63, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:35:37) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:36:50) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 23ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:38:55) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:38:56) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:39:17) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 77ms (View: 64, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:39:41) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 23ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:40:24) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:40:42) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 42ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:41:10) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:42:10) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 76ms (View: 63, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#create_user (for 127.0.0.1 at 2008-11-28 00:42:14) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b8b5760832ad7b2f79977b33272559f6415fa891", "user"=>{"company_name"=>"", "password_confirmation"=>"", "role"=>"Admin", "username"=>"", "last_name"=>"", "password"=>"", "email"=>"", "first_name"=>""}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Exists (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 35ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/create_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:42:27) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:42:36) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:42:51) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:42:57) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 77ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:43:00) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 24ms (View: 11, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:43:22) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:43:44) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#create_user (for 127.0.0.1 at 2008-11-28 00:43:45) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"b8b5760832ad7b2f79977b33272559f6415fa891", "user"=>{"company_name"=>"", "password_confirmation"=>"", "role"=>"Admin", "username"=>"", "last_name"=>"", "password"=>"", "email"=>"", "first_name"=>""}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 33ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/create_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:43:56) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:44:27) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:45:01) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:45:46) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:45:57) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:46:06) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:47:01) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:47:35) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 24ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:47:56) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:48:11) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 77ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:48:16) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_projects (for 127.0.0.1 at 2008-11-28 00:48:18) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/application
+Rendering administration/view_projects
+Completed in 28ms (View: 10, DB: 1) | 200 OK [http://localhost/admin/view_projects]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:48:20) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:48:22) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:48:36) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:48:37) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:48:45) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 00:48:52) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:48:54) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:48:56) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:49:25) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:49:40) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:49:49) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:49:55) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:50:15) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:50:19) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 23ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:50:25) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:51:21) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:51:37) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:51:49) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:52:33) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 23ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:52:36) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:53:13) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 23ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:53:38) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:53:46) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:53:51) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 23ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:54:33) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:54:50) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:55:17) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:55:22) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:55:37) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:55:49) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:56:00) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:56:19) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:56:40) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:56:58) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:57:12) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:57:34) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:57:37) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:57:42) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:57:55) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:58:14) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:58:42) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:58:50) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 00:59:02) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 00:59:27) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 00:59:39) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 40ms (View: 20, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:00:41) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 88ms (View: 70, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:02:11) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:02:42) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:03:28) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 93ms (View: 75, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:03:52) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:04:03) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:05:26) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 94ms (View: 19, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:05:40) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:05:48) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:06:21) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:07:10) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:08:16) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 91ms (View: 71, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:08:37) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 19, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:08:40) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 35ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:08:53) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 95ms (View: 78, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 01:09:01) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 36ms (View: 17, DB: 0) | 200 OK [http://localhost/project_management]
+
+
+Processing ProjectManagementController#new_project (for 127.0.0.1 at 2008-11-28 01:09:20) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/new_project
+
+
+ActionView::MissingTemplate (Missing template project_management/new_project.erb in view path /home/mundra/rails/project/app/views:):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:95:in `find_full_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:16:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:332:in `new'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:332:in `_unmemoized__pick_template'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/memoizable.rb:70:in `_pick_template'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:367:in `_render_with_layout'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:254:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:09:25) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 01:09:34) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 20ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_projects (for 127.0.0.1 at 2008-11-28 01:09:38) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/application
+Rendering administration/view_projects
+Completed in 28ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/view_projects]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 01:09:40) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 01:09:42) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:09:43) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:12:20) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:12:49) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:13:46) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:14:06) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:14:49) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:15:06) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:15:23) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:15:44) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:15:50) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:15:59) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:16:46) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:17:15) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 23ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:17:28) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 24ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:17:58) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:18:10) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:18:31) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:18:38) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:18:56) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:19:30) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:20:08) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:21:10) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:21:28) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:22:09) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:22:16) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:22:26) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 64ms (View: 51, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:22:52) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:23:26) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:24:12) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:24:15) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:24:23) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 76ms (View: 64, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:25:34) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:25:49) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#new_user (for 127.0.0.1 at 2008-11-28 01:26:30) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/new_user
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/new_user]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 01:26:33) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 01:26:35) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 72ms (View: 59, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_users (for 127.0.0.1 at 2008-11-28 01:26:37) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering administration/view_users
+Completed in 23ms (View: 7, DB: 1) | 200 OK [http://localhost/admin/view_users]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 01:26:39) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdministrationController#view_projects (for 127.0.0.1 at 2008-11-28 01:26:40) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/application
+Rendering administration/view_projects
+Completed in 28ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/view_projects]
+
+
+Processing AdministrationController#delete_project (for 127.0.0.1 at 2008-11-28 01:26:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) [0m
+Redirected to actionview_projects
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/admin/delete_project/2]
+
+
+Processing AdministrationController#view_projects (for 127.0.0.1 at 2008-11-28 01:26:52) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/application
+Rendering administration/view_projects
+Completed in 84ms (View: 9, DB: 1) | 200 OK [http://localhost/admin/view_projects]
+
+
+Processing AdministrationController#index (for 127.0.0.1 at 2008-11-28 01:26:57) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering administration/index
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing ProjectManagementController#index (for 127.0.0.1 at 2008-11-28 10:23:37) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering project_management/index
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT "projects".* FROM "projects" INNER JOIN user_project_relationships ON projects.id = user_project_relationships.project_id WHERE (("user_project_relationships".user_id = 8)) [0m
+Completed in 37ms (View: 18, DB: 0) | 200 OK [http://localhost/project_management]
