@@ -1,0 +1,45 @@
+<div id="pheader">
+<h2><%= @project.name %></h2>
+
+<h3>Description</h3>
+<p><%= @project.description %>
+</div>
+
+<div id="pnav">
+  <h3>Navigation</h3>
+  <ul>
+    <li><%= link_to 'Add User', :action => 'new_user' %></li>
+  </ul>
+</div>
+<div id="stackholders">
+<h3>Project Stakeholders</h3>
+<table>
+
+  <tr>
+    <th>UserID</th>
+    <th>Username</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>E-Mail</th>
+    <th>Company Name</th>
+    <th>Security Role</th>
+  </tr>
+<% for user in @project.users %>
+  <tr>
+    <td><%= user.id %></td>
+    <td><%= user.username %></td>
+    <td><%= user.first_name %></td>
+    <td><%= user.last_name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.company_name %></td>
+    <td><%= user.role %></td>
+    <% unless user == @current_user %>
+    <td><%= link_to 'Remove', :action => 'delete_user', :id => user %></td>
+  <% end %>
+  </tr>
+
+<% end %>
+</table>
+</div>
+<h3>Project Requirements</h3>
+<h3>Project Features</h3>

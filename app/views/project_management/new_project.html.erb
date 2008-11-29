@@ -1,0 +1,21 @@
+<h2>ProjectManagement::CreateProject</h2>
+<% unless flash[:notice].blank? %>
+  <div id="notification"><%= flash[:notice] %></div>
+<% end %>
+<% form_for :project, @project, :url => {:action => "create_project"}, :method => :post  do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Description" %><br />
+    <%= f.text_area :description %>
+  </p>
+    <p>
+  <%= f.submit "Create" %>
+  </p>
+<% end %>
+<div id="nav">
+  <%= link_to "Back", :action => "index" %>
+</div>
