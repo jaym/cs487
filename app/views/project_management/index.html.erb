@@ -2,6 +2,9 @@
 <% unless flash[:warning].blank? %>
   <div id="warning"><%= flash[:warning] %></div>
 <% end %>
+<% unless flash[:notice].blank? %>
+  <div id="notification"><%= flash[:notice] %></div>
+<% end %>
 
   <h3>My Projects</h3>
   <table cellspacing="3px">
@@ -25,8 +28,12 @@
       <td><%= project.open_date %></td>
       <td><%= project.close_date %></td>
       <td><%= link_to 'Manage', :action => 'manage', :id => project %></td>
-      <td><%= link_to 'Close', {:action => 'close_project', :id=> project }, {:method => :delete} %></td>
-      <td><%= link_to 'Delete', :action => 'destroy', :id => project %></td>
+      <% if !project.close_date %>
+        <td><%= link_to 'Close', {:action => 'close_project', :id=> project }, {:method => :delete} %></td>
+      <% else %>
+        <td>Close</td>
+        <td><%= link_to 'Delete', :action => 'destroy', :id => project %></td>
+      <% end %>
     </tr>
   <% end %>
 </table>

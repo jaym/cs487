@@ -62,7 +62,7 @@ form {
   
 }
 
-input, select {
+input, select, #project_description {
   padding: 1px 0;
   border: 1px solid #D8D8D8;
   font-size: 105%;
