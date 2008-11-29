@@ -13,13 +13,12 @@
       <div id="login_logout">
         <% if @current_user %>
           Logged in as: <%= @current_user.username %>
-          <em><%= link_to "(Logout)", session_path, :method => :delete %></em>
+          <em><%= link_to "(Logout)", logout_path %></em>
         <% else %>
           <em>Not logged in.</em>
-          <%= link_to "Login", new_session_path %>
+          <%= link_to "Login", login_path %>
         <% end %>
       </div>
-      <h1>The Project Tracker</h1>
       <%= yield %>
     </div>
   </body>

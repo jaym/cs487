@@ -36,12 +36,22 @@ td, th {
   margin: 10px 0;
 
 }
-#nav, #login_logout {
+#login_logout {
   background-color: #F0F0F0;
   border: 1px solid #D8D8D8;
   padding: 5px;
   margin: 10px 0;
   text-align: center;
+  position: absolute;
+  top: 0px;
+}
+#nav {
+  background-color: #F0F0F0;
+  border: 1px solid #D8D8D8;
+  padding: 5px;
+  margin: 10px 0;
+  text-align: center;
+
 }
 #login_logout {
   width: auto;
@@ -49,9 +59,27 @@ td, th {
   text-align: right;
   font-size: 70%;
 }
-#nav {
-  
+#pheader {
+  background-color: #F0F0F0;
+  border: 1px solid #D8D8D8;
+  padding: 5px;
+  margin: 10px 0;
+  margin-bottom: 1px;
 }
+#pnav {
+  background-color: #F0F0F0;
+  border: 1px solid #D8D8D8;
+  width: 15%;
+  float: right;
+  margin-left: 5px;
+  padding-left: 2px;
+
+}
+#pnav ul {
+  list-style: none;
+  padding-left: 2px;
+}
+
 
 form {
   background-color: #F0F0F0;
@@ -95,3 +123,4 @@ h3 {
 #open {
   font-size: 90%;
 }
+
