@@ -3,6 +3,7 @@ class ProjectManagementController < ApplicationController
   before_filter :is_manager
   def index
     @projects = @current_user.projects
+
   end
 
   def manage
@@ -15,9 +16,37 @@ class ProjectManagementController < ApplicationController
       flash[:warning] = 'You are not authorized to manage this project'
       redirect_to :action => 'index'
     end
+
   end
 
   def edit_project
+  end
+  
+  def add_user
+
+    p = Project.find params[:pid]
+    u = User.find params[:id]
+    if p.users.find_index(u) == nil
+      u.projects << p
+      flash[:notice] = "User has been added to project."
+    else
+      flash[:warning] = "User is already in this project."
+    end
+    redirect_to :action => 'manage', :id => params[:pid]
+  end
+  
+  def delete_user
+    p = Project.find params[:pid]
+    u = User.find params[:id]
+    i = p.users.find_index(u)
+    if i == nil
+      flash[:notice] = "User is not in this project"
+    else
+      upr = u.user_project_relationship.find_by_project_id p
+      upr.destroy
+      flash[:notice] = "User has been removed from the project"
+    end
+    redirect_to :action => 'manage', :id => params[:pid]
   end
   
   def new_project
@@ -26,6 +55,7 @@ class ProjectManagementController < ApplicationController
 
   def create_project
     @project = Project.new(params[:project])
+    @project.open_date = Time.now
     @project.users << @current_user 
     if @project.save
       flash[:notice] = "New project created."
@@ -37,6 +67,22 @@ class ProjectManagementController < ApplicationController
   end
 
   def crud_user
+
+    @project = Project.find_by_id(params[:pid])
+    unless params[:query].nil?
+      @query = params[:query]
+      condition = ["username LIKE ? OR first_name LIKE ? OR last_name LIKE ?",
+      "#{params[:query]}","#{params[:query]}","#{params[:query]}"] unless params[:query].nil?
+      @query = condition
+      @users = User.find(:all, :conditions => condition)
+      raise "Assertion failed !" unless @project != nil
+    else
+      @users = User.find(:all)
+    end
+    params[:pid] = @project
+    if request.xml_http_request?
+      render :partial => "users_list", :layout => false 
+    end
   end
   def destroy
     @project = Project.find(params[:id])
@@ -57,5 +103,4 @@ class ProjectManagementController < ApplicationController
     end
     redirect_to :action => 'index' 
   end
-
 end

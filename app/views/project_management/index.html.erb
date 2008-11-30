@@ -1,4 +1,6 @@
+<div id="pheader">
 <h2>ProjectManagement</h2>
+</div>
 <% unless flash[:warning].blank? %>
   <div id="warning"><%= flash[:warning] %></div>
 <% end %>
@@ -22,11 +24,11 @@
     <% else %>
     <tr id="open">
     <% end %>
-      <td><%= project.id %></td>
-      <td><%= project.name %></td>
-      <td><%= project.description %></td>
-      <td><%= project.open_date %></td>
-      <td><%= project.close_date %></td>
+      <td><%=h project.id %></td>
+      <td><%=h project.name %></td>
+      <td><%=h project.description %></td>
+      <td><%=h project.open_date %></td>
+      <td><%=h project.close_date %></td>
       <td><%= link_to 'Manage', :action => 'manage', :id => project %></td>
       <% if !project.close_date %>
         <td><%= link_to 'Close', {:action => 'close_project', :id=> project }, {:method => :delete} %></td>

@@ -1,2 +1,25 @@
-<h1>ProjectManagement#crud_user</h1>
-<p>Find me in app/views/project_management/crud_user.html.erb</p>
+<div id="pheader">
+  <h2>Add User for <%= @project.name %></h2>
+</div>
+<div id="pnav">
+  <h3>Navigation</h3>
+  <ul>
+    <li><%= link_to 'Back', :action => 'manage', :id => params[:pid] %></li>
+  </ul>
+</div>
+<div id="search">
+  <%= form_remote_tag(:update => "stable", :url => {:action => 'crud_user', :pid => params[:pid]},:html => {:style => "display: inline;", :id => "sbar"}) %>
+    <label for="user">Search: </label>
+    <%= text_field_tag("query", params['query'], :size => 45) %>
+    <%= submit_tag "Submit" %>
+  </form>
+</div>
+<div id="stable">
+  <%= render :partial => "users_list", :pid => @project %>
+</div>
+<% unless flash[:notice].blank? %>
+  <div id="notification"><%= flash[:notice] %></div>
+<% end %>
+<% unless flash[:warning].blank? %>
+  <div id="warning"><%= flash[:warning] %></div>
+<% end %>

@@ -1,7 +1,6 @@
+<div id="pheader">
 <h2>ProjectManagement::CreateProject</h2>
-<% unless flash[:notice].blank? %>
-  <div id="notification"><%= flash[:notice] %></div>
-<% end %>
+</div>
 <% form_for :project, @project, :url => {:action => "create_project"}, :method => :post  do |f| %>
   <%= f.error_messages %>
   <p>

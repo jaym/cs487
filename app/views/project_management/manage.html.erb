@@ -2,16 +2,21 @@
 <h2><%= @project.name %></h2>
 
 <h3>Description</h3>
-<p><%= @project.description %>
+<p><%=h @project.description %>
 </div>
 
 <div id="pnav">
   <h3>Navigation</h3>
   <ul>
-    <li><%= link_to 'Add User', :action => 'new_user' %></li>
+    <li><%= link_to 'Add User', :action => 'crud_user', :pid => @project %></li>
+    <li><%= link_to 'Back', :action => 'index' %></li>
   </ul>
 </div>
-<div id="stackholders">
+<% unless flash[:notice].blank? %>
+  <div id="notification"><%= flash[:notice] %></div>
+<% end %>
+
+<div id="stakeholders">
 <h3>Project Stakeholders</h3>
 <table>
 
@@ -34,7 +39,7 @@
     <td><%= user.company_name %></td>
     <td><%= user.role %></td>
     <% unless user == @current_user %>
-    <td><%= link_to 'Remove', :action => 'delete_user', :id => user %></td>
+      <td><%= link_to 'Remove', :action => 'delete_user', :id => user, :pid => @project %></td>
   <% end %>
   </tr>
 
