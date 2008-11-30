@@ -1,0 +1,21 @@
+<table>
+   <tr>
+      <th>User</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Company Name</th>
+      <th>User Level</th>
+   </tr>
+   <% for user in @users %>
+      <tr>
+         <td><%=h user.username %></td>
+         <td><%=h user.first_name %></td>
+         <td><%=h user.last_name %></td>
+         <td><%=h user.email %></td>
+         <td><%=h user.company_name %></td>
+         <td><%=h user.role %></td>
+         <td><%= link_to "Add", :action => "add_user", :id => user, :pid => @project  %></td>
+      </tr>
+   <% end %>
+</table>
