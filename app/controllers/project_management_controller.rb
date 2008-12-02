@@ -19,6 +19,19 @@ class ProjectManagementController < ApplicationController
 
   end
 
+  def add_requirement
+
+  end
+  def remove_requirement
+
+  end
+  def add_feature
+
+  end
+  def remove_feature
+
+  end
+
   def edit_project
   end
   

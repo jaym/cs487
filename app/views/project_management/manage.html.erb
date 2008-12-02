@@ -9,6 +9,7 @@
   <h3>Navigation</h3>
   <ul>
     <li><%= link_to 'Add User', :action => 'crud_user', :pid => @project %></li>
+    <li><%= link_to 'Add Requirement', :action => 'add_requirement', :pid => @project %></li>
     <li><%= link_to 'Back', :action => 'index' %></li>
   </ul>
 </div>
@@ -46,5 +47,50 @@
 <% end %>
 </table>
 </div>
+<div id="requirements">
 <h3>Project Requirements</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Status</th>
+    <th>Created At</th>
+    <th>Modified</th>
+  </tr>
+  <% for r in @project.requirements %>
+  <tr>
+    <td><%= r.name %></td>
+    <td><%= r.description %></td>
+    <td><%= r.status %></td>
+    <td><%= r.created_at %></td>
+    <td><%= r.updated_at %></td>
+  </tr>
+  <% end %>
+</table>
+</div>
+<div id="features">
 <h3>Project Features</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Risk</th>
+    <th>Rank</th>
+    <th>Owner</th>
+    <th>Created</th>
+    <th>Modified</th>
+  </tr>
+  <% for f in @project.features %>
+    <tr>
+      <td><%= f.name %></td>
+      <td><%= f.description %></td>
+      <td><%= f.risk %></td>
+      <td><%= f.rank %></td>
+      <td><%= f.user.username %></td>
+      <td><%= f.created_at %></td>
+      <td><%= f.updated_at %></td>
+    </tr>
+  <% end %>
+</table>
+</div>
+

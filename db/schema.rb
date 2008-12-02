@@ -11,9 +11,9 @@
 
 ActiveRecord::Schema.define(:version => 20081127001146) do
 
-  create_table "feature_project_realationships", :force => true do |t|
-    t.integer  "project_id", :default => 0, :null => false
-    t.integer  "feature_id", :default => 0, :null => false
+  create_table "feature_project_relationships", :force => true do |t|
+    t.integer  "feature_id"
+    t.integer  "project_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20081127001146) do
   create_table "projects", :force => true do |t|
     t.string   "name",        :limit => 50, :default => "",                    :null => false
     t.text     "description",               :default => "",                    :null => false
-    t.datetime "open_date",                 :default => '2008-11-27 15:46:06', :null => false
+    t.datetime "open_date",                 :default => '2008-12-02 11:11:43', :null => false
     t.datetime "close_date"
     t.datetime "created_at"
     t.datetime "updated_at"
