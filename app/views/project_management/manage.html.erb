@@ -9,20 +9,22 @@
   <h3>Navigation</h3>
   <ul>
     <li><%= link_to 'Add User', :action => 'crud_user', :pid => @project %></li>
-    <li><%= link_to 'Add Requirement', :action => 'add_requirement', :pid => @project %></li>
+    <li><%= link_to 'Add Requirement', :action => 'new_requirement', :pid => @project %></li>
+    <li><%= link_to 'Add Feature', :action => 'new_feature', :pid => @project %>
     <li><%= link_to 'Back', :action => 'index' %></li>
   </ul>
 </div>
 <% unless flash[:notice].blank? %>
   <div id="notification"><%= flash[:notice] %></div>
 <% end %>
-
+<% unless flash[:warning].blank? %>
+  <div id="warning"><%= flash[:warning] %></div>
+<% end %>
 <div id="stakeholders">
 <h3>Project Stakeholders</h3>
 <table>
 
   <tr>
-    <th>UserID</th>
     <th>Username</th>
     <th>First Name</th>
     <th>Last Name</th>
@@ -32,7 +34,6 @@
   </tr>
 <% for user in @project.users %>
   <tr>
-    <td><%= user.id %></td>
     <td><%= user.username %></td>
     <td><%= user.first_name %></td>
     <td><%= user.last_name %></td>
@@ -64,6 +65,8 @@
     <td><%= r.status %></td>
     <td><%= r.created_at %></td>
     <td><%= r.updated_at %></td>
+    <td><%= link_to 'Edit', :action => 'edit_requirement', :rid => r, :pid => @project %>
+    <td><%= link_to 'Delete', :action => 'remove_requirement', :rid => r, :pid => @project %></td>
   </tr>
   <% end %>
 </table>
@@ -89,6 +92,7 @@
       <td><%= f.user.username %></td>
       <td><%= f.created_at %></td>
       <td><%= f.updated_at %></td>
+      <td><%= link_to 'Delete', :action => 'remove_feature', :fid => f, :pid => @project %></td>
     </tr>
   <% end %>
 </table>

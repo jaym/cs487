@@ -1,6 +1,16 @@
 require 'digest/sha1'
 class SessionsController < ApplicationController
   def new
+    if @current_user
+      session[:user_id] = @current_user.id
+      if @current_user.role == "Admin"
+        redirect_to :controller => "Administration" 
+      elsif @current_user.role == "Manager"
+        redirect_to :controller => "Project_Management"
+      else
+        redirect_to :controller => "Project_Management"
+      end
+    end
   end
 
   def create
@@ -13,7 +23,7 @@ class SessionsController < ApplicationController
       elsif @current_user.role == "Manager"
         redirect_to :controller => "Project_Management"
       else
-        
+        redirect_to :controller => "Project_Management"
       end
     else
       flash[:warning] = "Incorrect login"

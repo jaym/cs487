@@ -36,5 +36,16 @@ class ApplicationController < ActionController::Base
     session[:return_to] = request.request_uri
     redirect_to new_session_path and return false
   end
+  
+  def is_allowed
+    if @current_user && @current_user.role != "Admin"
+      return true
+    end
+    flash[:warning] = "You are not authorized to view this page." and return false 
+
+    return true
+  end
+
+  helper_method :is_allowed
 
 end

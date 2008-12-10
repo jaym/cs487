@@ -4,6 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
   map.login '/login', :controller=> 'sessions', :action => 'new'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
+  map.root :controller => 'sessions', :action => 'new'
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
   # Keep in mind you can assign values other than :controller and :action
