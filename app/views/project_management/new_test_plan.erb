@@ -1,0 +1,30 @@
+<div id="pheader">
+  <h2>Add Test Plan</h2>
+</div>
+<div id="pnav">
+  <h3>Navigation</h3>
+  <ul>
+    <li><%= link_to 'Back', :action => 'edit_requirement', :rid => params[:rid] %></li>
+  </ul>
+</div>
+<% unless flash[:notice].blank? %>
+  <div id="notification"><%= flash[:notice] %></div>
+<% end %>
+<% unless flash[:warning].blank? %>
+  <div id="warning"><%= flash[:warning] %></div>
+<% end %>
+
+<% form_for :test_plan, @feature, :url => {:action => "add_test_plan", :rid => params[:rid]}, :method => :post  do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label "Description" %><br />
+    <%= f.text_area :description %>
+  </p>
+
+
+    <p>
+  <%= f.submit "Create" %>
+  </p>
+<% end %>
+

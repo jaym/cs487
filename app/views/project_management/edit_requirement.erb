@@ -1,0 +1,52 @@
+<div id="pheader">
+<h2>Edit Requirement</h2>
+</div>
+
+<div id="pnav">
+  <h3>Navigation</h3>
+  <ul>
+    <li><%= link_to 'Add Test Plan', :action => 'new_test_plan', :rid => params[:rid] %></li>
+    <li><%= link_to 'Back', :action => 'manage', :id => @requirement.project_id %></li>
+  </ul>
+</div>
+<% unless flash[:warning].blank? %>
+  <div id="warning"><%= flash[:warning] %></div>
+<% end %>
+<% unless flash[:notice].blank? %>
+  <div id="notification"><%= flash[:notice] %></div>
+<% end %>
+<% if @requirement.test_plans.size > 0 %>
+  <div>
+    <h2>Test Plans</h2>
+    <table>
+      <tr>
+        <th>Description</th>
+      </tr>
+      <% for plan in @requirement.test_plans %>
+        <tr>
+          <td><%= plan.description %></td>
+          <td width='40px'><%= link_to 'Delete', :action => 'delete_test_plan', :tid => plan, :rid => @requirement %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+<% end %>
+<h2>Update Requirement</h2>
+<% form_for :requirement, @requirement, :method => :post, :url => {:action => "update_requirement", :rid => @requirement.id}  do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= select(:requirement, :status, ['Accepted', 'Rejected' 'Review', 'Holding', 'Analysis', 'Needs Review', 'Reviewed'], {:selected => @requirement.status}) %>
+  </p> 
+  <%= f.submit "Update" %>
+  </p>
+<% end %>
+

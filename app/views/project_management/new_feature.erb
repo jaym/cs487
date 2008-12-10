@@ -1,0 +1,39 @@
+<div id="pheader">
+  <h2>Add Feature</h2>
+</div>
+<div id="pnav">
+  <h3>Navigation</h3>
+  <ul>
+    <li><%= link_to 'Back', :action => 'manage', :id => params[:pid] %></li>
+  </ul>
+</div>
+<% unless flash[:notice].blank? %>
+  <div id="notification"><%= flash[:notice] %></div>
+<% end %>
+<% unless flash[:warning].blank? %>
+  <div id="warning"><%= flash[:warning] %></div>
+<% end %>
+<% form_for :feature, @feature, :url => {:action => "add_feature", :pid => params[:pid]}, :method => :post  do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Description" %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label "Risk" %><br />
+    <%= select(:feature, :risk, ['Essential', 'Desirable','Future']) %>
+  </p>
+  <p>
+    <%= f.label "Rank" %><br />
+    <%= select(:feature, :rank, ['High', 'Medium', 'Low']) %>
+  </p>
+
+    <p>
+  <%= f.submit "Create" %>
+  </p>
+<% end %>
+
